@@ -14,7 +14,7 @@
 |load_geo.py|zip_code_database.csv|loads geocoding data, cleans, processes, filters, outputs .parquet file| geo_processed_data.parquet|
 |merge_data.py|aha_processed_data.parquet; ahrf_processed_data.parquet; geo_processed_data.parquet; cms_processed_data.parquet; (ssa_fips_processed_data.parquet)|loads multiple data files, merges datasets, and outputs parquet file| merged_data.parquet|
 |working.py|merged_data.parquet.csv|loads & processes merged_data.parquet file| (1) data_visualization.csv; (2) data_clean.csv; (3) data_raw_valve.parquet; (4) data_raw_valve.csv; (5) data_raw_cabg.parquet; (6) data_raw_cabg.csv|
-|prepare_data.py|data_raw_valve/cabg.parquet|loads valve, +/- CABG, 2009-2015; OR [toggles between] isolated CABG 2013 - 2015; processes data for model training -- both models |(1) numerical_data_valve.csv; (2) numerical_data_cabg.csv|
+|clean_data.py|data_raw_valve/cabg.parquet|loads valve, +/- CABG, 2009-2015; OR [toggles between] isolated CABG 2013 - 2015; processes data for model training -- both models |(1) numerical_data_valve.csv; (2) numerical_data_cabg.csv|
 
 ## Code Files - STATA
 
